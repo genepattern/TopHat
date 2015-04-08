@@ -5,7 +5,7 @@ description: This is of that libary type is passed correctly on command line
 module: TopHat
 params:
        bowtie.index: "<%gpunit.gpTestDataRoot%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
-       reads.pair.1: "filelist/filelist_pair1_empty.txt"
+       reads.pair.1: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
        reads.pair.2:
        mate.inner.dist: "50"
        mate.std.dev: 
