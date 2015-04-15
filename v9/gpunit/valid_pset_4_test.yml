@@ -4,7 +4,7 @@ name: TopHat - Valid Parameter Set 4
 description: This is a test of the Bowtie preset of sensitive
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
+       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
        reads.pair.1: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
        reads.pair.2: 
        mate.inner.dist: "50"

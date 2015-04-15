@@ -4,7 +4,7 @@ name: TopHat - Valid Parameter Set 13
 description: This is a test of running TopHat to generate the transcriptome index only
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/module_support_files/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
+       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
        reads.pair.1:
        reads.pair.2: 
        mate.inner.dist: "50"

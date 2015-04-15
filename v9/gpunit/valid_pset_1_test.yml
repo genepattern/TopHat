@@ -4,7 +4,7 @@ name: TopHat - Valid Parameter Set 1
 description: This is a test of defaults
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/module_suppport_files/bowtie2/index/by_genome/Saccharomyces_cerevisiae_sacCer3_UCSC/"
+       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Saccharomyces_cerevisiae_sacCer3_UCSC/"
        reads.pair.1: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_s.cerevisiae_mutant.txt"
        reads.pair.2: 
        mate.inner.dist: "50"
