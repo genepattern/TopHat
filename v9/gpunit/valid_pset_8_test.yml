@@ -4,14 +4,14 @@ name: TopHat - Valid Parameter Set 8
 description: This is a test of running TopHat with a GTF file and paired data
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI"
-       reads.pair.1: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
-       reads.pair.2: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_pair2_empty.txt"
+       bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI"
+       reads.pair.1: "<%gpunit.testData%>/gpunit/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
+       reads.pair.2: "<%gpunit.testData%>/gpunit/TopHat/v9/input/filelist/filelist_pair2_empty.txt"
        mate.inner.dist: "50"
        mate.std.dev: 
        library.type: 
        Bowtie.preset.options: 
-       GTF.file: "<%gpunit.gpTestDataRoot%>/module_support_files/annotation/gtf/Mus_musculus_GRCm38_NCBI.gtf"
+       GTF.file: "<%gpunit.testData%>/module_support_files/annotation/gtf/Mus_musculus_GRCm38_NCBI.gtf"
        transcriptome.index: 
        transcriptome.only: "no"
        max.transcriptome.hits: 
@@ -40,6 +40,6 @@ assertions:
         diffCmd: ./diffIgnoreCuffAndGpTraces.sh
         files:
             "cmdline.log":
-                diff: "<%gpunit.resultDataRoot%>/TopHat/v9/output/valid_pset_8_test/cmdline.log"
+                diff: "<%gpunit.resultData%>/gpunit/TopHat/v9/output/valid_pset_8_test/cmdline.log"
         jobStatus: error
 

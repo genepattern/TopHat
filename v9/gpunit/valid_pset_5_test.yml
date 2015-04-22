@@ -4,8 +4,8 @@ name: TopHat - Valid Parameter Set 5
 description: This is a test of the Bowtie preset of very-sensitive
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
-       reads.pair.1: "<%gpunit.serverTestDataRoot%>/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
+       bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
+       reads.pair.1: "<%gpunit.testData%>/gpunitTopHat/v9/input/filelist/filelist_pair1_empty.txt"
        reads.pair.2: 
        mate.inner.dist: "50"
        mate.std.dev: 
@@ -40,6 +40,6 @@ assertions:
         diffCmd: ./diffIgnoreCuffAndGpTraces.sh
         files:
             "cmdline.log":
-                diff: "<%gpunit.resultDataRoot%>/TopHat/v9/output/valid_pset_5_test/cmdline.log"
+                diff: "<%gpunit.resultData%>/gpunit/TopHat/v9/output/valid_pset_5_test/cmdline.log"
         jobStatus: error
 

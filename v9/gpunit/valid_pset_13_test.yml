@@ -4,14 +4,14 @@ name: TopHat - Valid Parameter Set 13
 description: This is a test of running TopHat to generate the transcriptome index only
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.gpTestDataRoot%>/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
+       bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
        reads.pair.1:
        reads.pair.2: 
        mate.inner.dist: "50"
        mate.std.dev: 
        library.type: 
        Bowtie.preset.options: 
-       GTF.file: "<%gpunit.gpTestDataRoot%>/module_support_files/annotation/gtf/Saccharomyces_cerevisiae_EF4_Ensembl.gtf"
+       GTF.file: "<%gpunit.testData%>/module_support_files/annotation/gtf/Saccharomyces_cerevisiae_EF4_Ensembl.gtf"
        transcriptome.index: 
        transcriptome.only: "no"
        max.transcriptome.hits: 
@@ -41,7 +41,7 @@ assertions:
         files:
             "cmdline.log":
                 diffCmd: ./diffIgnoreCuffAndGpTraces.sh
-                diff: "<%gpunit.resultDataRoot%>/TopHat/v9/output/valid_pset_13_test/cmdline.log"
+                diff: "<%gpunit.resultData%>/gpunit/TopHat/v9/output/valid_pset_13_test/cmdline.log"
             "Saccharomyces_cerevisiae_EF4_Ensembl.fa": !!null
             "Saccharomyces_cerevisiae_EF4_Ensembl.gff": !!null
             "Saccharomyces_cerevisiae_EF4_Ensembl.1.bt2": !!null
