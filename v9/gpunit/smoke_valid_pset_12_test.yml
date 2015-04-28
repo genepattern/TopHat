@@ -1,0 +1,42 @@
+#lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00230:8.3
+#
+name: TopHat - Smoke test variant of Valid Parameter Set 12
+description: This is a test of running with fusion mapping enabled with default settings
+module: TopHat
+params:
+       bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
+       reads.pair.1: "<%gpunit.testData%>/gpunit/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
+       reads.pair.2: 
+       mate.inner.dist: "50"
+       mate.std.dev: 
+       library.type: 
+       Bowtie.preset.options: 
+       GTF.file: 
+       transcriptome.index: 
+       transcriptome.only: "no"
+       max.transcriptome.hits: 
+       prefilter.multihits: 
+       raw.junctions.file: 
+       find.novel.junctions: 
+       min.anchor.length: "8"
+       max.splice.mismatches: "0"
+       min.intron.length: 
+       max.intron.length: "500000"
+       max.insertion.length: "3"
+       max.deletion.length: "3"
+       quality.value.scale: 
+       max.multihits: "20"
+       read.mismatches: "2"
+       coverage.search: "--no-coverage-search"
+       microexon.search: 
+       fusion.mapping: "yes"
+       fusion.anchor.length: "20"
+       fusion.read.mismatches: "2"
+       output.prefix: "<reads.pair.1_basename>"
+       read.edit.dist: 
+       read.gap.length: 
+       additional.tophat.options: 
+assertions:
+        files:
+            "cmdline.log": !!null
+        jobStatus: error
