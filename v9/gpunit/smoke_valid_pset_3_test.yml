@@ -4,7 +4,7 @@ name: TopHat - Smoke test variant of Valid Parameter Set 3
 description: This is a test of the Bowtie preset of fast
 module: TopHat
 params:
-       bowtie.index: "<%gpunit.testData%>/module_supoprt_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
+       bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Mus_musculus_GRCm38_NCBI/"
        reads.pair.1: "<%gpunit.testData%>/gpunit/TopHat/v9/input/filelist/filelist_pair1_empty.txt"
        reads.pair.2: 
        mate.inner.dist: "50"
