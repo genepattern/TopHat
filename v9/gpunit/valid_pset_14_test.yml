@@ -42,4 +42,4 @@ assertions:
             "cmdline.log":
                 diffCmd: ./diffIgnoreCuffAndGpTraces.sh
                 diff: "<%gpunit.resultData%>/gpunit/TopHat/v9/output/valid_pset_14_test/cmdline.log"
-            "filelist_s.cerevisiae_mutant.accepted_hits.bam": null
+            "filelist_s.cerevisiae_mutant.accepted_hits.bam": !!null
