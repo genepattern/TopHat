@@ -40,4 +40,4 @@ assertions:
         jobStatus: success
         files:
             "cmdline.log": !!null
-            "filelist_s.cerevisiae_mutant.accepted_hits.bam": null
+            "filelist_s.cerevisiae_mutant.accepted_hits.bam": !!null
