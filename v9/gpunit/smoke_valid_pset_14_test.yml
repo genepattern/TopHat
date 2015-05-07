@@ -12,7 +12,7 @@ params:
        library.type: 
        Bowtie.preset.options: 
        GTF.file:
-       transcriptome.index: "<%gpunit.testData%>/gpunit/TopHat/v9/input/transcriptome_index"
+       transcriptome.index: "<%gpunit.testData%>/gpunit/TopHat/v9/input/transcriptome_index/"
        transcriptome.only: "no"
        max.transcriptome.hits: 
        prefilter.multihits: 
