@@ -42,11 +42,11 @@ assertions:
             "cmdline.log":
                 diffCmd: ./diffIgnoreCuffAndGpTraces.sh
                 diff: "<%gpunit.resultData%>/gpunit/TopHat/v9/output/valid_pset_13_test/cmdline.log"
-            "Saccharomyces_cerevisiae_EF4_Ensembl.fa": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.gff": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.1.bt2": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.2.bt2": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.3.bt2": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.4.bt2": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.rev.1.bt2": !!null
-            "Saccharomyces_cerevisiae_EF4_Ensembl.rev.2.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.fa": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.gff": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.1.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.2.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.3.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.4.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.rev.1.bt2": !!null
+            "transcriptome_index/Saccharomyces_cerevisiae_EF4_Ensembl.rev.2.bt2": !!null

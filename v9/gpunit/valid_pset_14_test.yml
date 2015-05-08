@@ -5,14 +5,14 @@ description: This is a test of running TopHat with a previously generated transc
 module: TopHat
 params:
        bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
-       reads.pair.1: "<%gpunit.testData%>/gpunit/TopHat/v9/input/filelist/filelist_s.cerevisiae_mutant.txt"
+       reads.pair.1: "<%gpunit.testData%>/gpunit/TopHat/v9/input/s.cerevisiae_mutant.fastq"
        reads.pair.2: 
        mate.inner.dist: "50"
        mate.std.dev: 
        library.type: 
        Bowtie.preset.options: 
        GTF.file:
-       transcriptome.index: "transcriptome_index"
+       transcriptome.index: "<%gpunit.testData%>/gpunit/TopHat/v9/input/transcriptome_index/"
        transcriptome.only: "no"
        max.transcriptome.hits: 
        prefilter.multihits: 
