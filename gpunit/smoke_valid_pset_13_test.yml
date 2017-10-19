@@ -1,8 +1,9 @@
-#lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00230:8.3
+#lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00230:8.11
 #
 name: TopHat - Smoke test variant of Valid Parameter Set 13
 description: This is a test of running TopHat to generate the transcriptome index only
-module: TopHat
+#module: TopHat
+module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00230:8.11
 params:
        bowtie.index: "<%gpunit.testData%>/module_support_files/bowtie2/index/by_genome/Saccharomyces_cerevisiae_EF4_Ensembl/"
        reads.pair.1:
