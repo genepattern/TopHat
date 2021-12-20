@@ -1,2 +1,2 @@
 # TopHat
-GenePattern TopHat module.
+GenePattern TopHat module gpunits
